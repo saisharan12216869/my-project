@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Your Simple Shopping Destination</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="top-bar">
+            <div class="logo">
+                <i class="fas fa-shopping-bag"></i>
+                <span>Bootstrap</span>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search products...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <button class="action-btn shopping">
+                <i class="fas fa-shopping-bag"></i>
+            </button>
+            <div class="user-actions">
+                <button class="action-btn profile">
+                    <i class="fas fa-user"></i>
+                    <div class="profile-dropdown">
+                        <div class="profile-header">
+                            <h3>My Profile</h3>
+                            <span class="close-profile"><i class="fas fa-times"></i></span>
+                        </div>
+                        <div class="profile-content">
+                            <div class="profile-info">
+                                <div class="profile-avatar">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="profile-details">
+                                    <h4>John Doe</h4>
+                                    <p>john.doe@example.com</p>
+                                </div>
+                            </div>
+                            <div class="profile-menu">
+                                <a href="#" class="profile-menu-item">
+                                    <i class="fas fa-cog"></i>
+                                    Account Settings
+                                </a>
+                                <a href="#" class="profile-menu-item">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    My Orders
+                                </a>
+                                <a href="#" class="profile-menu-item">
+                                    <i class="fas fa-sliders-h"></i>
+                                    Preferences
+                                </a>
+                            </div>
+                            <button class="logout-btn">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </button>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#deals" class="nav-link">Deals</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="bg-overlay"></div>
+                <div class="bg-circle circle-1"></div>
+                <div class="bg-circle circle-2"></div>
+                <div class="bg-circle circle-3"></div>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to <span class="highlight">ShopEase</span></h1>
+                <p>Discover amazing products at unbeatable prices</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="cta-button primary">
+                        <i class="fas fa-shopping-cart"></i>
+                        Start Shopping
+                    </a>
+                    <a href="#categories" class="cta-button secondary">
+                        <i class="fas fa-search"></i>
+                        Explore More
+                    </a>
+                </div>
+            </div>
+            <div class="hero-mockups">
+                <div class="mockup-item mockup-1">
+                    <div class="mockup-content">
+                        <div class="mockup-image-container">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Headphones">
+                            <div class="mockup-badge">
+                                <i class="fas fa-fire"></i> Best Seller
+                            </div>
+                        </div>
+                        <div class="mockup-overlay">
+                            <h3>Premium Headphones</h3>
+                            <p>Experience crystal clear sound with our latest noise-canceling technology</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check"></i> Active Noise Cancellation</span>
+                                <span><i class="fas fa-check"></i> 30-hour Battery Life</span>
+                                <span><i class="fas fa-check"></i> Wireless Charging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mockup-item mockup-2">
+                    <div class="mockup-content">
+                        <div class="mockup-image-container">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Watch">
+                            <div class="mockup-badge">
+                                <i class="fas fa-star"></i> New Arrival
+                            </div>
+                        </div>
+                        <div class="mockup-overlay">
+                            <h3>Smart Watch Pro</h3>
+                            <p>Stay connected in style with our advanced smartwatch technology</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check"></i> Health Monitoring</span>
+                                <span><i class="fas fa-check"></i> Water Resistant</span>
+                                <span><i class="fas fa-check"></i> Customizable Faces</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mockup-item mockup-3">
+                    <div class="mockup-content">
+                        <div class="mockup-image-container">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wireless Earbuds">
+                            <div class="mockup-badge">
+                                <i class="fas fa-bolt"></i> Trending
+                            </div>
+                        </div>
+                        <div class="mockup-overlay">
+                            <h3>Wireless Earbuds</h3>
+                            <p>Experience true wireless freedom with our premium earbuds</p>
+                            <div class="product-features">
+                                <span><i class="fas fa-check"></i> True Wireless</span>
+                                <span><i class="fas fa-check"></i> Touch Controls</span>
+                                <span><i class="fas fa-check"></i> Fast Charging</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" class="categories">
+            <div class="categories-container">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3>Electronics</h3>
+                        <p>Latest gadgets and devices</p>
+                        <a href="#products" class="category-link">
+                            <span>Shop Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <h3>Fashion</h3>
+                        <p>Trendy clothing and accessories</p>
+                        <a href="#products" class="category-link">
+                            <span>Shop Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Home & Kitchen</h3>
+                        <p>Everything for your home</p>
+                        <a href="#products" class="category-link">
+                            <span>Shop Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <h3>Gaming</h3>
+                        <p>Gaming gear and accessories</p>
+                        <a href="#products" class="category-link">
+                            <span>Shop Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section id="products" class="featured-products">
+            <div class="featured-products-container">
+                <h2>Featured Products</h2>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Headphones">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium Headphones</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128)</span>
+                            </div>
+                            <p class="price">₹16,599</p>
+                            <button class="add-to-cart" data-product-id="premium-headphones" data-product-name="Premium Headphones" data-product-price="16599" data-product-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Watch">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Smart Watch Pro</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(256)</span>
+                            </div>
+                            <p class="price">₹20,749</p>
+                            <button class="add-to-cart" data-product-id="smart-watch-pro" data-product-name="Smart Watch Pro" data-product-price="20749" data-product-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wireless Earbuds">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Wireless Earbuds</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(89)</span>
+                            </div>
+                            <p class="price">₹10,789</p>
+                            <button class="add-to-cart" data-product-id="wireless-earbuds" data-product-name="Wireless Earbuds" data-product-price="10789" data-product-image="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Running Shoes">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Running Shoes</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(312)</span>
+                            </div>
+                            <p class="price">₹7,469</p>
+                            <button class="add-to-cart" data-product-id="running-shoes" data-product-name="Running Shoes" data-product-price="7469" data-product-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Camera">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Digital Camera</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(178)</span>
+                            </div>
+                            <p class="price">₹33,199</p>
+                            <button class="add-to-cart" data-product-id="digital-camera" data-product-name="Digital Camera" data-product-price="33199" data-product-image="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Gaming Console">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Gaming Console</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(421)</span>
+                            </div>
+                            <p class="price">₹41,499</p>
+                            <button class="add-to-cart" data-product-id="gaming-console" data-product-name="Gaming Console" data-product-price="41499" data-product-image="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Laptop">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Ultrabook Pro</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(289)</span>
+                            </div>
+                            <p class="price">₹107,899</p>
+                            <button class="add-to-cart" data-product-id="ultrabook-pro" data-product-name="Ultrabook Pro" data-product-price="107899" data-product-image="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1527698266440-12104e498b76?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Tablet">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Tablet Max</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(156)</span>
+                            </div>
+                            <p class="price">₹49,799</p>
+                            <button class="add-to-cart" data-product-id="tablet-max" data-product-name="Tablet Max" data-product-price="49799" data-product-image="https://images.unsplash.com/photo-1527698266440-12104e498b76?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart TV">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Smart TV 4K</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(342)</span>
+                            </div>
+                            <p class="price">₹66,399</p>
+                            <button class="add-to-cart" data-product-id="smart-tv-4k" data-product-name="Smart TV 4K" data-product-price="66399" data-product-image="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://itgadgetsonline.com/wp-content/uploads/2023/12/Razer-BlackWidow-V4-Green-Mechanical-Gaming-Keyboard-3-1.webp" alt="Gaming Keyboard">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Mechanical Gaming Keyboard</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(198)</span>
+                            </div>
+                            <p class="price">₹24,899</p>
+                            <button class="add-to-cart" data-product-id="gaming-keyboard" data-product-name="Mechanical Gaming Keyboard" data-product-price="24899" data-product-image="https://itgadgetsonline.com/wp-content/uploads/2023/12/Razer-BlackWidow-V4-Green-Mechanical-Gaming-Keyboard-3-1.webp">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Watch">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Smart Watch Elite</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(267)</span>
+                            </div>
+                            <p class="price">₹29,049</p>
+                            <button class="add-to-cart" data-product-id="smart-watch-elite" data-product-name="Smart Watch Elite" data-product-price="29049" data-product-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Wireless Earbuds">
+                            <div class="product-actions">
+                                <button class="wishlist-btn"><i class="fas fa-heart"></i></button>
+                                <button class="quick-view-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pro Earbuds</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(189)</span>
+                            </div>
+                            <p class="price">₹14,939</p>
+                            <button class="add-to-cart" data-product-id="pro-earbuds" data-product-name="Pro Earbuds" data-product-price="14939" data-product-image="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section id="deals" class="deals-section">
+            <div class="deals-container">
+                <h2>Special Deals & Offers</h2>
+                <div class="deals-grid">
+                    <div class="deal-card">
+                        <div class="deal-badge">50% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Headphones Deal">
+                        </div>
+                        <div class="deal-content">
+                            <h3>Premium Headphones</h3>
+                            <div class="price-container">
+                                <span class="original-price">₹399.99</span>
+                                <span class="discounted-price">₹199.99</span>
+                            </div>
+                            <p class="deal-timer">Ends in: <span class="timer">23:59:59</span></p>
+                            <button class="deal-button">Grab Deal</button>
+                        </div>
+                    </div>
+                    <div class="deal-card">
+                        <div class="deal-badge">30% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Smart Watch Deal">
+                        </div>
+                        <div class="deal-content">
+                            <h3>Smart Watch Pro</h3>
+                            <div class="price-container">
+                                <span class="original-price">₹349.99</span>
+                                <span class="discounted-price">₹244.99</span>
+                            </div>
+                            <p class="deal-timer">Ends in: <span class="timer">23:59:59</span></p>
+                            <button class="deal-button">Grab Deal</button>
+                        </div>
+                    </div>
+                    <div class="deal-card">
+                        <div class="deal-badge">40% OFF</div>
+                        <div class="deal-image">
+                            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Earbuds Deal">
+                        </div>
+                        <div class="deal-content">
+                            <h3>Wireless Earbuds</h3>
+                            <div class="price-container">
+                                <span class="original-price">₹199.99</span>
+                                <span class="discounted-price">₹119.99</span>
+                            </div>
+                            <p class="deal-timer">Ends in: <span class="timer">23:59:59</span></p>
+                            <button class="deal-button">Grab Deal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on new products and special offers</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Our Location</h3>
+                            <p>123 Shopping Street, Tech City, TC 12345</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <h3>Phone Number</h3>
+                            <p>+1 (123) 456-7890</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <h3>Email Address</h3>
+                            <p>info@shopease.com</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" id="sendMessageBtn">Send Message</button>
+                        <div class="success-message" id="successMessage" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Your message has been sent successfully!</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>ShopEase</span>
+                </div>
+                <p class="footer-description">Your one-stop destination for all your shopping needs. Quality products, amazing deals, and exceptional service.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link youtube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Shopping Street, Tech City, TC 12345</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (123) 456-7890</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@shopease.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-clock"></i>
+                        <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates and offers.</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEase. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
